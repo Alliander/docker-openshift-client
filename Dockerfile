@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:stretch
 
 COPY openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz /run.sh /
 
