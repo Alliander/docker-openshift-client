@@ -2,7 +2,7 @@ FROM debian:stretch
 
 COPY openshift-client-linux-4.3.5.tar.gz istioctl.bz2 argocd-linux-amd64 /run.sh /
 
-RUN tar zxvf /openshift-client-linux-4.3.5.tar.gz --strip-components 1 -C / && \
+RUN tar zxvf /openshift-client-linux-4.3.5.tar.gz -C / && \
   rm /openshift-client-linux-4.3.5.tar.gz && \
   ln -s /oc /bin/oc && \
   apt-get update && \
