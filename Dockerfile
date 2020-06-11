@@ -6,7 +6,7 @@ RUN tar zxvf /openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz -
   rm /openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz && \
   ln -s /oc /bin/oc && \
   apt-get update && \
-  apt-get install -y ca-certificates bzip2 curl netcat-openbsd openssh-client jq vim && \
+  apt-get install -y ca-certificates bzip2 curl netcat-openbsd openssh-client jq vim socat && \
   bzcat /argocd-linux-1.1.2.bz2 > /usr/local/bin/argocd-1.1.2 && \
   bzcat /istioctl.bz2 > /usr/local/bin/istioctl && \
   rm /argocd-linux-1.1.2.bz2 && \
